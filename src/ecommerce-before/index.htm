@@ -828,5 +828,17 @@
         <div class="container">
         </div>
     </footer>
+    <script>
+        if(document.cookie) {
+            let array = document.cookie.split('USER_ID=');
+            if(array.length == 2){
+                document.getElementById("USER_ID").value = array[1].split(';')[0];
+            }
+        }
+        function changeUserId() {
+            document.cookie = "USER_ID=" + document.getElementById("USER_ID").value;
+            alert("USER_ID=" + document.getElementById("USER_ID").value);
+        }
+    </script>
 </body>
 </html>

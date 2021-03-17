@@ -836,7 +836,6 @@
         <div class="container">
         </div>
     </footer>
-    <!-- amazon personalize code begins -->
     <script>
         if(document.cookie) {
             let array = document.cookie.split('USER_ID=');
@@ -848,6 +847,7 @@
             document.cookie = "USER_ID=" + document.getElementById("USER_ID").value;
             alert("USER_ID=" + document.getElementById("USER_ID").value);
         }
+        // amazon personalize code begins
         function loadJSON(file, callback) {
             var xobj = new XMLHttpRequest();
             xobj.overrideMimeType("application/json");
@@ -884,7 +884,7 @@
                 document.getElementById('recommends_demo').innerHTML = html;
             }
         )
+        // amazon personalize code ends
     </script>
-    <!-- amazon personalize code ends -->
 </body>
 </html>
