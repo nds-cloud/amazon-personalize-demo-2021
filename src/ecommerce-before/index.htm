@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NDS Amazon Personalize Demo Shop</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+</head>
+<body>
+
+    <header>
+        <div class="navbar navbar-dark bg-dark box-shadow">
+            <div class="container d-flex justify-content-between">
+                <a href="index.htm" class="navbar-brand d-flex align-items-center">
+                    NDS Amazon Personalize Demo Shop
+                </a>
+                <form class="form-inline ml-auto">
+                    <input type="text" id="USER_ID" required minlength="4" maxlength="8" size="10"/>
+                    <a class="btn btn-primary btn-light ml-2" role="button" onclick="changeUserId()";  style="width:auto;">login</a>
+                </form>
+            </div>
+        </div>
+    </header>
+    <main role="main">
+        <section class="jumbotron text-center mb-0">
+            <div class="container">
+                <h1 class="jumbotron-heading">
+                    Personalized Auto Recommendation Solution
+                </h1>
+                <p class="lead text-muted">
+                    You can now implement a personalized automatic recommendation solution in a simple way.
+                    Start right now.
+                </p>
+            </div>
+        </section>
+
+        <div class="py-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <a href="product/cracker.html">
+                                <img class="card-img-top" alt="" style="width: 100%; height: auto;" src="static/img/products/cracker.jpg">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    크래커
+                                </h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="product/cracker.html">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                        </a>
+                                    </div>
+                                    <small class="text-muted">
+                                        KRW  3000
+
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <a href="product/pretzel.html">
+                                <img class="card-img-top" alt="" style="width: 100%; height: auto;" src="static/img/products/pretzel.jpg">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    프리첼
+                                </h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="product/pretzel.html">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                        </a>
+                                    </div>
+                                    <small class="text-muted">
+                                        KRW  6000
+
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <a href="product/dumpling.html">
+                                <img class="card-img-top" alt="" style="width: 100%; height: auto;" src="static/img/products/dumpling.jpg">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    만두
+                                </h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="product/dumpling.html">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                        </a>
+                                    </div>
+                                    <small class="text-muted">
+                                        KRW  4600
+
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <a href="product/icecream2.html">
+                                <img class="card-img-top" alt="" style="width: 100%; height: auto;" src="static/img/products/icecream2.jpg">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    초코아이스크림
+                                </h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="product/icecream2.html">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                        </a>
+                                    </div>
+                                    <small class="text-muted">
+                                        KRW  5000
+
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <a href="product/chocolate.html">
+                                <img class="card-img-top" alt="" style="width: 100%; height: auto;" src="static/img/products/chocolate.jpg">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    초콜렛
+                                </h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="product/chocolate.html">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                        </a>
+                                    </div>
+                                    <small class="text-muted">
+                                        KRW  6000
+
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <a href="product/salmon.html">
+                                <img class="card-img-top" alt="" style="width: 100%; height: auto;" src="static/img/products/salmon.jpg">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    연어
+                                </h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="product/salmon.html">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                        </a>
+                                    </div>
+                                    <small class="text-muted">
+                                        KRW  10000
+
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <a href="product/pizza.html">
+                                <img class="card-img-top" alt="" style="width: 100%; height: auto;" src="static/img/products/pizza.jpg">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    피자
+                                </h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="product/pizza.html">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                        </a>
+                                    </div>
+                                    <small class="text-muted">
+                                        KRW  25000
+
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <a href="product/corn.html">
+                                <img class="card-img-top" alt="" style="width: 100%; height: auto;" src="static/img/products/corn.jpg">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    옥수수
+                                </h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="product/corn.html">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                        </a>
+                                    </div>
+                                    <small class="text-muted">
+                                        KRW  2000
+
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <a href="product/cake2.html">
+                                <img class="card-img-top" alt="" style="width: 100%; height: auto;" src="static/img/products/cake2.jpg">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    생일케이크
+                                </h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="product/cake2.html">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                        </a>
+                                    </div>
+                                    <small class="text-muted">
+                                        KRW  9000
+
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <a href="product/pancake.html">
+                                <img class="card-img-top" alt="" style="width: 100%; height: auto;" src="static/img/products/pancake.jpg">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    팬케이크
+                                </h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="product/pancake.html">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                        </a>
+                                    </div>
+                                    <small class="text-muted">
+                                        KRW  10000
+
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <a href="product/broccoli.html">
+                                <img class="card-img-top" alt="" style="width: 100%; height: auto;" src="static/img/products/broccoli.jpg">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    브로콜리
+                                </h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="product/broccoli.html">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                        </a>
+                                    </div>
+                                    <small class="text-muted">
+                                        KRW  4000
+
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <a href="product/cherrytomato.html">
+                                <img class="card-img-top" alt="" style="width: 100%; height: auto;" src="static/img/products/cherrytomato.jpg">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    방울토마토
+                                </h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="product/cherrytomato.html">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                        </a>
+                                    </div>
+                                    <small class="text-muted">
+                                        KRW  4000
+
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <a href="product/strawberry.html">
+                                <img class="card-img-top" alt="" style="width: 100%; height: auto;" src="static/img/products/strawberry.jpg">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    딸기
+                                </h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="product/strawberry.html">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                        </a>
+                                    </div>
+                                    <small class="text-muted">
+                                        KRW  8000
+
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <a href="product/pineapple.html">
+                                <img class="card-img-top" alt="" style="width: 100%; height: auto;" src="static/img/products/pineapple.jpg">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    파인애플
+                                </h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="product/pineapple.html">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                        </a>
+                                    </div>
+                                    <small class="text-muted">
+                                        KRW  5000
+
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <a href="product/apple.html">
+                                <img class="card-img-top" alt="" style="width: 100%; height: auto;" src="static/img/products/apple.jpg">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    사과
+                                </h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="product/apple.html">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                        </a>
+                                    </div>
+                                    <small class="text-muted">
+                                        KRW  1000
+
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <a href="product/macaroon.html">
+                                <img class="card-img-top" alt="" style="width: 100%; height: auto;" src="static/img/products/macaroon.jpg">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    마카롱
+                                </h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="product/macaroon.html">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                        </a>
+                                    </div>
+                                    <small class="text-muted">
+                                        KRW  8000
+
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <a href="product/banana.html">
+                                <img class="card-img-top" alt="" style="width: 100%; height: auto;" src="static/img/products/banana.jpg">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    바나나
+                                </h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="product/banana.html">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                        </a>
+                                    </div>
+                                    <small class="text-muted">
+                                        KRW  5000
+
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <a href="product/pomegranate.html">
+                                <img class="card-img-top" alt="" style="width: 100%; height: auto;" src="static/img/products/pomegranate.jpg">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    석류
+                                </h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="product/pomegranate.html">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                        </a>
+                                    </div>
+                                    <small class="text-muted">
+                                        KRW  6000
+
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <a href="product/blueberries.html">
+                                <img class="card-img-top" alt="" style="width: 100%; height: auto;" src="static/img/products/blueberries.jpg">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    블루베리
+                                </h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="product/blueberries.html">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                        </a>
+                                    </div>
+                                    <small class="text-muted">
+                                        KRW  6000
+
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <a href="product/cake.html">
+                                <img class="card-img-top" alt="" style="width: 100%; height: auto;" src="static/img/products/cake.jpg">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    케익
+                                </h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="product/cake.html">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                        </a>
+                                    </div>
+                                    <small class="text-muted">
+                                        KRW  5000
+
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <a href="product/grape.html">
+                                <img class="card-img-top" alt="" style="width: 100%; height: auto;" src="static/img/products/grape.jpg">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    포도
+                                </h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="product/grape.html">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                        </a>
+                                    </div>
+                                    <small class="text-muted">
+                                        KRW  6000
+
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <a href="product/bun.html">
+                                <img class="card-img-top" alt="" style="width: 100%; height: auto;" src="static/img/products/bun.jpg">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    식빵
+                                </h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="product/bun.html">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                        </a>
+                                    </div>
+                                    <small class="text-muted">
+                                        KRW  2500
+
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <a href="product/croissant.html">
+                                <img class="card-img-top" alt="" style="width: 100%; height: auto;" src="static/img/products/croissant.jpg">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    크로와상
+                                </h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="product/croissant.html">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                        </a>
+                                    </div>
+                                    <small class="text-muted">
+                                        KRW  2000
+
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <a href="product/bagel.html">
+                                <img class="card-img-top" alt="" style="width: 100%; height: auto;" src="static/img/products/bagel.jpg">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    베이글
+                                </h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="product/bagel.html">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                        </a>
+                                    </div>
+                                    <small class="text-muted">
+                                        KRW  5000
+
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <a href="product/hamburger.html">
+                                <img class="card-img-top" alt="" style="width: 100%; height: auto;" src="static/img/products/hamburger.jpg">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    햄버거
+                                </h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="product/hamburger.html">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                        </a>
+                                    </div>
+                                    <small class="text-muted">
+                                        KRW  4500
+
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <a href="product/donuts.html">
+                                <img class="card-img-top" alt="" style="width: 100%; height: auto;" src="static/img/products/donuts.jpg">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    도너츠
+                                </h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="product/donuts.html">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                        </a>
+                                    </div>
+                                    <small class="text-muted">
+                                        KRW  1500
+
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <a href="product/waffle.html">
+                                <img class="card-img-top" alt="" style="width: 100%; height: auto;" src="static/img/products/waffle.jpg">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    와플
+                                </h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="product/waffle.html">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                        </a>
+                                    </div>
+                                    <small class="text-muted">
+                                        KRW  4600
+
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <a href="product/icecream3.html">
+                                <img class="card-img-top" alt="" style="width: 100%; height: auto;" src="static/img/products/icecream3.jpg">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    바닐라아이스크림
+                                </h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="product/icecream3.html">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                        </a>
+                                    </div>
+                                    <small class="text-muted">
+                                        KRW  6000
+
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <a href="product/pumpkinporridge.html">
+                                <img class="card-img-top" alt="" style="width: 100%; height: auto;" src="static/img/products/pumpkinporridge.jpg">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    호박죽
+                                </h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="product/pumpkinporridge.html">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                        </a>
+                                    </div>
+                                    <small class="text-muted">
+                                        KRW  3000
+
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <a href="product/icecream.html">
+                                <img class="card-img-top" alt="" style="width: 100%; height: auto;" src="static/img/products/icecream.jpg">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    아이스크림
+                                </h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="product/icecream.html">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                        </a>
+                                    </div>
+                                    <small class="text-muted">
+                                        KRW  1000
+
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <a href="product/meatball.html">
+                                <img class="card-img-top" alt="" style="width: 100%; height: auto;" src="static/img/products/meatball.jpg">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    미트볼
+                                </h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="product/meatball.html">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                        </a>
+                                    </div>
+                                    <small class="text-muted">
+                                        KRW  11000
+
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <a href="product/orange.html">
+                                <img class="card-img-top" alt="" style="width: 100%; height: auto;" src="static/img/products/orange.jpg">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    오렌지
+                                </h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="product/orange.html">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                        </a>
+                                    </div>
+                                    <small class="text-muted">
+                                        KRW  2000
+
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <a href="product/steak.html">
+                                <img class="card-img-top" alt="" style="width: 100%; height: auto;" src="static/img/products/steak.jpg">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    스테이크
+                                </h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="product/steak.html">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                        </a>
+                                    </div>
+                                    <small class="text-muted">
+                                        KRW  20000
+
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <a href="product/noodle.html">
+                                <img class="card-img-top" alt="" style="width: 100%; height: auto;" src="static/img/products/noodle.jpg">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    라면
+                                </h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="product/noodle.html">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                        </a>
+                                    </div>
+                                    <small class="text-muted">
+                                        KRW  3000
+
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="py-5 px-5">
+        <div class="container">
+        </div>
+    </footer>
+</body>
+</html>
